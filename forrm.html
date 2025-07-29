@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الكشف الذكي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      padding: 20px;
+      direction: rtl;
+    }
+    h1 {
+      text-align: center;
+      color: #0078D7;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+    input:focus, textarea:focus {
+      border-color: #0078D7;
+      outline: none;
+    }
+    .section-title {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #0078D7;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+      margin-top: 10px;
+      background-color: #f1f9ff;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #dceeff;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .checkbox-group input[type="checkbox"] {
+      transform: scale(1.2);
+    }
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 15px;
+      background-color: #0078D7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 17px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: bold;
+      color: #0078D7;
+      font-size: 26px;
+      animation: floatUpDown 2s ease-in-out infinite, shimmer 4s linear infinite;
+      background: linear-gradient(to right, #0078D7, #00bcd4, #0078D7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @keyframes floatUpDown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -200px 0; }
+      100% { background-position: 200px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>الكشف الذكي</h1>
+
+  <form>
+
+    <div class="section-title">تسجيل الدخول</div>
+    <label>* المعلومات الشخصية</label>
+    <input type="text" placeholder="الاسم">
+    <input type="text" placeholder="رقم الجوال">
+
+    <div class="section-title">الخدمات</div>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> - كشف التسريبات</label>
+      <label><input type="checkbox"> - فحص عضلات السياره [كفرات]</label>
+      <label><input type="checkbox"> - فحص الهيكل الخارجي</label>
+      <label><input type="checkbox"> - فحص اسفل السياره</label>
+      <label><input type="checkbox"> - الفحص باستعمال كمبيوتر السياره</label>
+      <label><input type="checkbox"> - تصوير توثيفي كامل</label>
+      <label><input type="checkbox"> - تقرير فوري لحاله السياره</label>
+    </div>
+
+    <div class="section-title">الدفع</div>
+    <input type="text" placeholder="طريقة الدفع">
+
+    <div class="section-title">التقارير</div>
+    <textarea rows="3" placeholder="تفاصيل أو ملاحظات عن التقرير"></textarea>
+
+    <div class="section-title">الدعم الفني</div>
+    <textarea rows="3" placeholder="هل تحتاج مساعدة؟ اكتب هنا"></textarea>
+
+    <div class="section-title">توصـيـل</div>
+    <input type="text" placeholder="العنوان للتوصيل">
+
+    <button type="submit">إرسال الطلب</button>
+
+    <div class="footer-note"># ودع الزحمة، فحصك صار ذكي</div>
+
+  </form>
+
+</body>
+</html>
